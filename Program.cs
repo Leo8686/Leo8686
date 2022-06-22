@@ -1,12 +1,20 @@
-﻿static object Main(object? @int)
+﻿//Estrutura Switch
+
+Console.WriteLine("Qual nota você dá para o prato? 0, 5, ou 10");
+int.TryParse(Console.ReadLine(), out int nota);
+
+switch(nota)
 {
-
-    Console.WriteLine("Qual seu nome?");
-    String nome = Console.ReadLine();
-    Console.WriteLine("Quantos anos você tem?");
-    Int idade object Int = null;
-    -int.Parse(Console.ReadLine());
-
-    Console.WriteLine("Seu nome é {0} e sua idade é de {1}", nome, idade);
-
+    case 0:
+      Console.WriteLine("Comida muito ruim!");
+        break;
+    case 5:
+       Console.WriteLine("Comida razoável!");
+        break;
+    case 10:
+       Console.WriteLine("Comida muito boa!");
+        break;
+    default:
+       Console.WriteLine("Nota inexistente!");
+        break;
 }
